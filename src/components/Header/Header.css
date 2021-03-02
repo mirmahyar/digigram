@@ -1,4 +1,18 @@
 .header-wrapper{
-    height: 4 rem;
-    background-color: cadetblue;
+    display: flex;
+    height: 80px;
+    background-color: #497799;
+
+}
+
+
+
+
+.hamburger{
+    color: white;
+    margin-top: 24px;
+}
+
+.profile-picture{
+    height: 75px;
 }
