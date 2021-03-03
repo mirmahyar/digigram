@@ -1,12 +1,13 @@
+import { Button } from '@material-ui/core';
 import { MessageSharp } from '@material-ui/icons';
 import React, {useState, useEffect, useRef} from 'react'
-import DisplayMessages from '../DisplayMessages/DisplayMessages'
+import "./Input.css"
 
 function Input() {
 
     const [message,SetMessage] = useState("");
     const [messageArray,SetMessageArray] = useState([]);
-    const [answer,SetAnswer]  = useState("");
+    const [answer,SetAnswer]  = useState(false);
     
     const [submitted,SetSubmitted] = useState(false);
     const [clear,SetClear]= useState(false);
@@ -19,36 +20,45 @@ function Input() {
     const handleSubmit = (e) => {
         e.preventDefault();
         SetSubmitted(true);
-        SetMessageArray([...message])
+        SetMessageArray([message])
+        console.log(messageArray);
         setTimeout(() => {
-            SetAnswer("Hi ! This is your answer after 2 seconds!")
+            SetAnswer(true)
         }, 2000);
+        }
 
-
-        
-
-    }
+        const handleClear = () => {
+            SetMessage("");
+            
+        }
 
     
 
     
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="wrapper">
+            
+            <div className="display">
+            <p>{messageArray}</p>
+            {answer ? <p>Hi ... ! This is your answer after 2 seconds ! </p> : null}
+            </div>
+
+            
+            <form className="form" onSubmit={handleSubmit}>
             <input
             type="text" id="input" name="input"
-            //value={message}
+            value={message}
             
             placeholder="Write a message"
             onChange= {handleChange}
             />
             <input type="submit" value="Send"/>
+            <Button onClick = {handleClear}>Clear</Button>
             
             </form>
 
-            <p>{messageArray}</p>
-            <p>{answer}</p>
+            
             
             
 
