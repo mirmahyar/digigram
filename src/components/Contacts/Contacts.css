@@ -1,0 +1,25 @@
+
+.ContactsWrapper{
+    
+}
+
+.ContactsInfoWrapper{
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.ContactsHeader{
+    text-align: center;
+    
+    background-color: #497799;
+    color: white;
+    height: 70px;
+    
+}
+
+.contactName{
+    font-weight: 600;
+}
+
+
+

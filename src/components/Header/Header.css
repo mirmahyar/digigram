@@ -16,3 +16,7 @@
 .profile-picture{
     height: 75px;
 }
+
+.profile-picture:hover{
+    height:95px;
+}
