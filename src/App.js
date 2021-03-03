@@ -1,14 +1,32 @@
-import './App.css';
-import Header from './components/Header/Header';
-import Input from './components/Input/Input';
+import "./App.css";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink,
+} from "react-router-dom";
+import Chats from "./components/ChatList/ChatList";
+import Contacts from "./components/Contacts/Contacts";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Input />
+    
+    
+    <Router>
+      <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/contacts" exact component={Contacts} />
+      <Route path="/chats" component={Chats} />
       
-    </div>
+      </Switch>
+      
+     
+        
+    </Router>
+    
   );
 }
 

@@ -46,7 +46,8 @@ function Input() {
 
             
             <form className="form" onSubmit={handleSubmit}>
-            <input
+            <input 
+            className=""
             type="text" id="input" name="input"
             value={message}
             
