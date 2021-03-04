@@ -16,4 +16,24 @@
 .form{
     position: fixed;
     margin-top: 500px;
+    display: flex;
+    
+}
+
+.input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.iconPlusMessage{
+    display: flex;
+}
+
+.icon{
+   padding-top: 12px;
+}
+
+.profile-picture-small{
+    height:45px;
+    margin-right: 8px;
 }

@@ -2,6 +2,8 @@ import { Button } from '@material-ui/core';
 import { MessageSharp } from '@material-ui/icons';
 import React, {useState, useEffect, useRef} from 'react'
 import "./Input.css"
+import PersonIcon from '@material-ui/icons/Person'
+import Pacino from "../../Pictures/pacino-circle.png"
 
 function Input() {
 
@@ -29,6 +31,8 @@ function Input() {
 
         const handleClear = () => {
             SetMessage("");
+            SetMessageArray([]);
+            SetAnswer(false);
             
         }
 
@@ -40,20 +44,30 @@ function Input() {
         <div className="wrapper">
             
             <div className="display">
+
+                <div className="iconPlusMessage" >
+                {submitted ? <PersonIcon className="icon"/> : null}
             <p>{messageArray}</p>
-            {answer ? <p>Hi ... ! This is your answer after 2 seconds ! </p> : null}
+            </div>
+
+
+            {answer ? <div className="iconPlusMessage"> <img className="profile-picture-small" src={Pacino}  alt="pacino"/> <p>Hi ... ! This is your answer after 2 seconds ! </p></div> : null }
             </div>
 
             
             <form className="form" onSubmit={handleSubmit}>
+
+
             <input 
-            className=""
+             className="input"
             type="text" id="input" name="input"
             value={message}
             
             placeholder="Write a message"
             onChange= {handleChange}
             />
+
+
             <input type="submit" value="Send"/>
             <Button onClick = {handleClear}>Clear</Button>
             
