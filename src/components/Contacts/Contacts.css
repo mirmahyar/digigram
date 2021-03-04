@@ -4,8 +4,12 @@
 }
 
 .ContactsInfoWrapper{
+
     display: flex;
     margin-bottom: 80px;
+    border-style: solid;
+    border-color: turquoise;
+    background-color: skyblue;
 }
 
 .ContactsHeader{

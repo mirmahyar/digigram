@@ -26,7 +26,7 @@ function Contacts() {
         </div>
 
         <BrowserRouter>
-        <Route path = "/contacts/Deniro" exact component={Home} />
+        
         </BrowserRouter>
         </>
     )

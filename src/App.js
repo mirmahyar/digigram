@@ -20,6 +20,9 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/contacts" exact component={Contacts} />
       <Route path="/chats" component={Chats} />
+      <Route path = "/deniroo" exact render= {()=>{
+            <div>Deniro page</div>
+        }} />
       
       
       

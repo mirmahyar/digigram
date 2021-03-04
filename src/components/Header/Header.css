@@ -25,3 +25,15 @@
 .header-title{
     color: white;
 }
+
+.headerLink{
+    color: white;
+    padding-top: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.headerLinks{
+    display: flex;
+}
