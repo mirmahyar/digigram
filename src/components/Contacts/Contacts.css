@@ -26,4 +26,22 @@
 }
 
 
+.info-wrapper{
+    display: block;
+    text-align: center;
+    
+    grid-template-columns: repeat();
+}
+
+.info-wrapper .info-img{
+    height: 100px;
+}
+
+.info-wrapper .info-button{
+    border-style: solid;
+    background-color: turquoise;
+    color: white;
+    padding:8px;
+}
+
 

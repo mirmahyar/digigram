@@ -3,7 +3,7 @@ import { MessageSharp } from "@material-ui/icons";
 import React, { useState, useEffect, useRef } from "react";
 import "./Input.css";
 import PersonIcon from "@material-ui/icons/Person";
-import Pacino from "../../Pictures/pacino-circle.png";
+import ProfilePic from '../../Pictures/profile-pic.png';
 
 function Input() {
   const [message, SetMessage] = useState("");
@@ -47,7 +47,7 @@ function Input() {
             {" "}
             <img
               className="profile-picture-small"
-              src={Pacino}
+              src={ProfilePic}
               alt="pacino"
             />{" "}
             <p>Hi ... ! This is your answer after 2 seconds ! </p>

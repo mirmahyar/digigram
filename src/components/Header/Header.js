@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Header.css";
-import Pacino from '../../Pictures/pacino-circle.png';
+import ProfilePic from '../../Pictures/profile-pic.png';
 import {Link} from "react-router-dom";
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
                 <Link to='/chats' className='headerLink'>Chats</Link>
                 </div>
                 <Link to='/contacts'>
-                <img className="profile-picture" src={Pacino} alt="pacino" />
+                <img className="profile-picture" src={ProfilePic} alt="pacino" />
                 </Link>
                 <h2 className="header-title">DigiGram</h2>
                 
