@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Contacts.css"
 
-function ContactInfo(props) {
+function ContactCard(props) {
     return (
         <div className="ContactsInfoWrapper">
             
@@ -13,4 +13,4 @@ function ContactInfo(props) {
     )
 }
 
-export default ContactInfo
+export default ContactCard;

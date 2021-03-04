@@ -21,6 +21,8 @@ function App() {
       <Route path="/contacts" exact component={Contacts} />
       <Route path="/chats" component={Chats} />
       
+      
+      
       </Switch>
       
      

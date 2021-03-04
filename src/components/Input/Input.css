@@ -37,3 +37,18 @@
     height:45px;
     margin-right: 8px;
 }
+
+.form .clearButton{
+    
+    border-style: solid;
+    color:white;
+    box-sizing: border-box;
+    background-color: royalblue;
+}
+
+.submitButton{
+    border-style: solid;
+    color:white;
+    box-sizing: border-box;
+    background-color: royalblue;
+}
